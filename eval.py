@@ -13,7 +13,7 @@ import subprocess
 import tempfile
 import requests
 
-API_KEY = "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"
+API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 TASKS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 TASKS = [

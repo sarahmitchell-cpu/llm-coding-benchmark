@@ -7,7 +7,7 @@ Tests redesigned tasks 007, 008 (with retry), 009 (new bug), 010 (new bug).
 import os, sys, json, shutil, subprocess, tempfile, re, time
 import requests
 
-API_KEY = "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"
+API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 TASKS_DIR = "/tmp/harder-tasks"
 
 TASKS = [
